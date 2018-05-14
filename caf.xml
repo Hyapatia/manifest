@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!-- CAF -->
+  <project name="device_qcom_common" path="device/qcom/common" remote="alc" />
+  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="alc" />
+  <project name="art" path="art" remote="alc" />
+  <project name="bionic" path="bionic" remote="alc" />
+  <project name="bootable_recovery" path="bootable/recovery" remote="alc" />
+  <project name="build_blueprint" path="build/blueprint" remote="alc" revision="8.1" />
+  <project name="build" path="build/make" remote="alc" >
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project name="build_kati" path="build/kati" remote="alc" />
+  <project name="build_soong" path="build/soong" remote="alc" >
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project name="external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="ha" />
+  <project name="external_connectivity" path="external/connectivity" remote="ha"  />
+  <project name="external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="ha" />
+  <project name="external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="ha" />
+  <project name="external_libweave" path="external/libweave" remote="ha" />
+  <project name="external_okhttp" path="external/okhttp" remote="ha" />
+  <project name="external_selinux" path="external/selinux" remote="ha" />
+  <project name="external_tinycompress" path="external/tinycompress" remote="ha" />
+  <project name="frameworks_av" path="frameworks/av" remote="ha" />
+  <project name="frameworks_base" path="frameworks/base" remote="ha" />
+  <project name="frameworks_native" path="frameworks/native" remote="ha" />
+  <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="ha"  />
+  <project name="frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="ha" />
+  <project name="hardware_interfaces" path="hardware/interfaces" remote="ha" />
+  <project name="hardware_caf_interfaces" path="hardware/caf/interfaces" remote="ha" >
+  <copyfile dest="hardware/alchemy/Android.bp" src="Android.bp" />
+  </project>
+  <project name="hardware_libhardware" path="hardware/libhardware" remote="ha" />
+  <project name="hardware_qcom_bt" path="hardware/qcom/bt" remote="ha" />
+  <project name="hardware_qcom_audio" path="hardware/qcom/audio" remote="ha" revision="8.1-8996" />
+  <project name="hardware_qcom_media" path="hardware/qcom/media" remote="ha" revision="8.1-8996" />
+  <project name="hardware_qcom_wlan" path="hardware/qcom/wlan" remote="ha" />
+  <project name="hardware_ril" path="hardware/ril" remote="ha" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="ha" />
+  <project name="packages_services_Telephony" path="packages/services/Telephony" remote="ha" />
+  <project name="packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="ha" />
+  <project name="packages_apps_Calendar" path="packages/apps/Calendar" remote="ha" />
+  <project name="packages_apps_Messaging" path="packages/apps/Messaging" remote="ha" />
+  <project name="packages_apps_Dialer" path="packages/apps/Dialer" remote="ha" />
+  <project name="packages_apps_Contacts" path="packages/apps/Contacts" remote="ha" />
+  <project name="packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="ha" />
+  <project name="packages_apps_Launcher3" path="packages/apps/Launcher3" remote="ha" />
+  <project name="packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" remote="ha" />
+  <project name="packages_apps_SnapdragonMusic" path="packages/apps/SnapdragonMusic" remote="ha" />
+  <project name="packages_apps_SnapdragonGallery" path="packages/apps/SnapdragonGallery" remote="ha" />
+  <project name="system_bt" path="system/bt" remote="ha" />
+  <project name="system_core" path="system/core" remote="ha" />
+  <project name="system_nfc" path="system/nfc" remote="ha" />
+  <project name="system_vold" path="system/vold" remote="ha" />
+  <project name="system_sepolicy" path="system/sepolicy" remote="ha" />
+  <project name="system_media" path="system/media" remote="ha" />
+  <project name="vendor_qcom_opensource_dpm" path="vendor/qcom/opensource/dpm" remote="ha" />
+  <project name="vendor_qcom_opensource_softap" path="system/qcom" remote="ha" />
+  <project name="vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="ha" />
+  <project name="vendor_caf" path="vendor/caf" remote"ha" />
+  <!-- CAF -->
+</manifest>
